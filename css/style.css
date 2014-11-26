@@ -73,3 +73,8 @@ body {
 @media (min-width: 970px) {
     #hire-small { display: none; }
 }
+
+.breathe {
+    text-align: center;
+    padding: 1em 0;
+}
