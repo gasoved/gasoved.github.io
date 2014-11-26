@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>gasoved - Le Indépendante</title>
+        <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+		<div class="bgs container-fluid">
+            <div class="vidcon">
+                <video id="vid" autoplay loop>
+                    <source src="../vid/refactoring.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="title">
+                <h1>gasoved</h1>
+                <ul class="lead">
+                    <li>Freelancer</li>
+                    <li>MSc in CompSc</li>
+                </ul>
+            </div>
+
+            <div id="welcome" class="lead">
+                <strong class="white big">Payment Options</strong><br>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="BJZYX5HF4SMKG">
+                    <table>
+                        <tr><td><input type="hidden" name="on0" value="Monthly Server Subscription">Monthly Server Subscription</td></tr><tr><td><select name="os0">
+                        <option value="Server S">Server S : $5,00 USD - monthly</option>
+                        <option value="Server M">Server M : $10,00 USD - monthly</option>
+                        <option value="Server L">Server L : $20,00 USD - monthly</option>
+                    </select> </td></tr>
+                    </table>
+                    <div class="breathe">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </div>
+                </form>
+                <ul class="list-unstyled">
+                    <li><strong>Contact</strong></li>
+                    <li>Email: gasoved at gmail.com</li>
+                </ul>
+            </div>
+		</div>
+        <script type="text/javascript" src="../js/script.js"></script>
+	</body>
+</html>
