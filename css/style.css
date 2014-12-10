@@ -75,6 +75,14 @@ body {
 }
 
 .breathe {
-    text-align: center;
     padding: 1em 0;
+}
+
+.strip-top {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.payments form {
+    text-align: center;
 }
