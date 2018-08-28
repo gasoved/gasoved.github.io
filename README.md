@@ -1,4 +1,4 @@
 gasoved.github.io
 =================
 
-Public repo for http://gasoved.com
+Public repo for https://gasoved.github.io
