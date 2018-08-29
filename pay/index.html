@@ -27,11 +27,31 @@
             </div>
 
             <div id="welcome" class="box lead payments">
-                <p>
-                    You can use Payoneer to send a payment.
-                </p>
+                <strong class="big">Payment Options</strong><br>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="BJZYX5HF4SMKG">
+                    <table>
+                        <tr><td><input type="hidden" name="on0" value="Monthly Server Subscription">Monthly Server Subscription</td></tr><tr><td><select name="os0">
+                        <option value="Server S">Server S : $5,00 USD - monthly</option>
+                        <option value="Server M">Server M : $10,00 USD - monthly</option>
+                        <option value="Server L">Server L : $20,00 USD - monthly</option>
+                    </select> </td></tr>
+                    </table>
+                    <div class="breathe">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </div>
+                </form>
 
-                <iframe src="https://paynow.payoneer.com/"></iframe>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <h3 class="strip-top">Custom Payment</h3>
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="PZP542RENAVT2">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/TR/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
 
 
                 <ul class="list-unstyled">
@@ -40,6 +60,14 @@
                 </ul>
             </div>
 		</div>
-        <script type="text/javascript" src="/js/script.js"></script>
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-89678938-1', 'auto');
+            ga('send', 'pageview');
+        </script>
 	</body>
 </html>
