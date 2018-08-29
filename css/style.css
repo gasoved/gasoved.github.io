@@ -1,19 +1,22 @@
 html, body{
-    height:100%;
+    height: 100%;
     min-width: 900px;
 }
 
 body {
-	background-image: url(../img/bgr.jpg);
+	background-image: url("../img/bgr.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
 .bgs {
     background: url("../img/p.png");
-    height:100%;
+    height: 100%;
 }
-@media (max-width: 970px) {
+
+.testimonials .bgs { height: 950%; }
+
+@media (max-width: 1270px) {
     .bgs { height: 240%; }
 }
 
@@ -31,6 +34,8 @@ body {
     margin-top: 4.3%;
     position: absolute;
 }
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active{ text-decoration: none; color:inherit; }
 
 .title h1 {
     color: #ffffff;
@@ -52,15 +57,44 @@ body {
     font-family: Coustard,monospace;
 }
 
-#welcome {
+.flexcon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+@media (max-width: 570px) {
+    .flexcon { flex-direction: column; align-items: flex-start; }
+}
+
+.box {
     background-color: rgba(255, 255, 255, 0.66);
     padding: 2%;
     width: 24%;
     margin: 5% 0 0 4.5%;
     font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+#welcome {
+    width: 24%;
+}
+
 @media (max-width: 970px) {
-    #welcome { margin: 2% 0 0 4.5%; }
+    #welcome, .content { margin: 2% 0 0 4.5%; }
+}
+
+html.testimonials, body.testimonials {
+    min-width: auto;
+}
+
+.content {
+    width: 87%;
+    max-width: 870px;
+    box-sizing: content-box;
+}
+
+.content img {
+    width: 100%;
+    max-width: 870px;
 }
 
 .white { color: #ffffff; }
@@ -85,4 +119,15 @@ body {
 
 .payments form {
     text-align: center;
+}
+
+.spin {
+    animation: spin 500ms linear infinite;
+    display: inline-block;
+    margin-left: 7px;
+}
+
+@keyframes spin {
+    40% { transform: rotate(180deg); }
+    80% {  transform: translateX(0px); }
 }
