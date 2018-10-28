@@ -12,6 +12,16 @@ body {
 .bgs {
     background: url("../img/p.png");
     height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container-fluid {
+    z-index: 2;
+    position: relative;
 }
 
 .testimonials .bgs { height: 950%; }
@@ -70,7 +80,7 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:active{ text-decoration: none; color:i
     background-color: rgba(255, 255, 255, 0.66);
     padding: 2%;
     width: 24%;
-    margin: 5% 0 0 4.5%;
+    margin: 5% 0 2% 4.5%;
     font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -79,7 +89,7 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:active{ text-decoration: none; color:i
 }
 
 @media (max-width: 970px) {
-    #welcome, .content { margin: 2% 0 0 4.5%; }
+    #welcome, .content { margin: 2% 0 2% 4.5%; }
 }
 
 html.testimonials, body.testimonials {
